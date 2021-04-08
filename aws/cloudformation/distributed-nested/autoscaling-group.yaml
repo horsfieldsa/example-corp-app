@@ -84,17 +84,17 @@ Mappings:
       Arch: HVM64
   AWSRegionArch2AMI:
     us-west-2:
-      HVM64: ami-027a2e5474c0bc6cd
+      HVM64: ami-061f916a72583df40
     eu-west-1:
-      HVM64: ami-083b2042d47f63709
+      HVM64: ami-0a1a9495db04cc606
     us-east-1:
-      HVM64: ami-0f5dcea88f141f88f
+      HVM64: ami-08c30ea51ef9b98e5
     us-east-2:
-      HVM64: ami-095c14d0f3eb74872
+      HVM64: ami-062d8971b01f7e9a4
     ap-northeast-1:
-      HVM64: ami-0de43e4a01cef90e3
+      HVM64: ami-041b1b4610ad4d5a2
     ap-southeast-2:
-      HVM64: ami-00a62ce5a45899d72
+      HVM64: ami-0ba2cf09f54536fd2
 
 Resources:
 
@@ -163,7 +163,7 @@ Resources:
                     echo export IMAGE_UPLOAD_BUCKET=${ImageUploadBucket} >> /etc/profile
                     source /etc/profile
                     # Deploy App
-                    git clone https://github.com/horsfieldsa/example-corp-app.git /opt/webapp --branch v1.0.1
+                    git clone https://github.com/horsfieldsa/example-corp-app.git /opt/webapp --branch update-rails-5-2-5
                     cd /opt/webapp
                     bundle install
                     RAILS_ENV=production rails assets:precompile
