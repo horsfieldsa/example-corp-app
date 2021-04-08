@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 5.2.0'
+gem 'rails', '~> 5.2.5'
 
 group :development, :test do
   gem 'sqlite3'
@@ -27,7 +27,7 @@ gem 'aws-sdk-s3'
 gem 'aws-sdk-rekognition'
 gem 'aws-sdk-comprehend'
 gem 'mini_magick'
-gem 'rails_admin', '~> 1.3'
+gem 'rails_admin', '~> 1.4.2'
 gem 'devise'
 gem 'sucker_punch', '~> 2.0'
 gem 'cancancan', '~> 2.0'
